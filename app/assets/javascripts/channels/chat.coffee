@@ -6,4 +6,6 @@ App.chat = App.cable.subscriptions.create "ChatChannel",
     # Called when the subscription has been terminated by the server
 
   received: (data) ->
-    $('#sent-messages').append('<p>' + data.message + '<p>')
+    div = $('#sent-messages')
+    div.append('<p><b>' + data.nickname + ': </b>'+ data.message + '<p>')
+    div[0].scrollTop = div[0].scrollHeight
