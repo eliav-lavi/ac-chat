@@ -9,7 +9,7 @@ class HomeController < ApplicationController
 
   def send_message
     ActionCable.server.broadcast 'chat_channel', nickname: session[:nickname], message: params[:message]
-    
+
     respond_to :js
   end
 end

@@ -1,3 +1,39 @@
 // Place all the styles related to the Home controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+body {
+  padding-left: 5rem;
+  padding-top: 1rem;
+  font-family: "Avenir", Helvetica, Arial, sans-serif;
+  background-color: rgba(225, 225, 225, 0.6);
+
+}
+
+#chat-box {
+  width: 55vw;
+  border-style: solid;
+  border-width: 7px;
+}
+
+#sent-messages {
+  overflow: scroll;
+  height: 50vh;
+  width: 100%;
+  padding-top: 0.5rem;
+  background-color: rgb(249, 249, 249);
+}
+
+#message {
+  width: -moz-available;
+  width: -webkit-fill-available;
+  font-size: medium;
+}
+
+.posted-message {
+  padding-left: 1rem;
+}
+
+.posted-message:nth-child(even) {
+  background-color: rgb(243, 243, 243);
+}

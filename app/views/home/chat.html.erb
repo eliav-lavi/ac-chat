@@ -1,10 +1,8 @@
-<h1>ActionCable::Glorious::Chat</h1>
+<div id="chat-box">
+  <div id='sent-messages'>
+  </div>
 
-<div id='sent-messages' style="overflow: scroll; height:200px;">
-</div>
-
-<%= form_tag("/send_message", method: "post", remote: true) do %>
-  <%= label_tag(:message, "Say something:") %>
-  <%= text_field_tag(:message, '', autofocus: true) %>
-  <%= submit_tag("Say!") %>
+  <%= form_tag("/send_message", method: "post", remote: true) do %>
+    <%= text_field_tag(:message, '', autofocus: true, placeholder: 'Enter your message...') %>
 <% end %>
+</div>
