@@ -6,5 +6,5 @@ test:
 
 production:
   adapter: redis
-  url: redis://localhost:6379/1
+  url: redis://redistogo:7ed230173b5f65ba082250180770fa55@porgy.redistogo.com:9607/
   channel_prefix: ac-chat_production
