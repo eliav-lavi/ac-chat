@@ -9,4 +9,3 @@ App.chat = App.cable.subscriptions.create "ChatChannel",
     div = $('#sent-messages')
     div.append('<p><b>' + data.nickname + ': </b>'+ data.message + '<p>')
     div[0].scrollTop = div[0].scrollHeight
-    $('#message')[0].value = ''
