@@ -6,3 +6,8 @@
     <%= text_field_tag(:message, '', autofocus: true, placeholder: 'Enter your message...') %>
 <% end %>
 </div>
+
+<div class="container">
+  <%= button_to 'Logout', '/quit_chat', method: :get, class: 'button' %>
+</div>
+
