@@ -1,6 +1,5 @@
-
 <%= form_tag("/login", method: "post") do %>
   <%= label_tag(:nickname, "Please pick a nickname:") %>
-  <%= text_field_tag(:nickname) %>
+  <%= text_field_tag(:nickname, nil, required: true) %>
   <%= submit_tag("Start chatting!", class: 'button') %>
 <% end %>
