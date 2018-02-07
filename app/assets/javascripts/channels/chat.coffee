@@ -1,6 +1,7 @@
 App.chat = App.cable.subscriptions.create "ChatChannel",
   connected: ->
-    # Called when the subscription is ready for use on the server
+    sent_messages = $('#sent-messages')
+    sent_messages.append('<div class="posted-message"><p>welcome to the chat room!<p></div>')
 
   disconnected: ->
     # Called when the subscription has been terminated by the server
