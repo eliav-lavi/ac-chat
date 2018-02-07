@@ -4,7 +4,7 @@
 
   <%= form_tag("/send_message", method: "post", remote: true) do %>
     <%= hidden_field_tag :nickname, params[:nickname] %>
-    <%= text_field_tag(:message, '', autofocus: true, placeholder: 'Enter your message...', required: true) %>
+    <%= text_field_tag(:message, '', autofocus: true, placeholder: "#{params[:nickname]}, type your message...", required: true) %>
   <% end %>
 </div>
 
